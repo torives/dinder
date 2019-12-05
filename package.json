@@ -1,0 +1,25 @@
+{
+  "name": "dinder",
+  "version": "0.0.1",
+  "description": "Aplication focused on rating Dood Photos",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/torives/dinder.git"
+  },
+  "author": "Victor Yves Crispim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/torives/dinder/issues"
+  },
+  "homepage": "https://github.com/torives/dinder#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "husky": "^3.1.0"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
