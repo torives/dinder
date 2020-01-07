@@ -19,8 +19,8 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: Text(
-          'Hello World',
+        child: Image(
+          image: AssetImage("assets/yoda.jpg"),
         ),
       ),
     );
