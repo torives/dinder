@@ -19,10 +19,20 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: Image(
-          image: AssetImage("assets/yoda.jpg"),
+        child: GestureDetector( 
+          onPanStart: (details) {
+              print("onPanStart");
+          },
+          onPanUpdate: (details) {
+            print("onPanUpdated ${details.globalPosition}");
+          },
+          onPanEnd: (details) {
+            print('onPanEnd');
+          },
+          child: Image(
+            image: AssetImage("assets/yoda.jpg"),
         ),
       ),
-    );
+    ));
   }
 }
